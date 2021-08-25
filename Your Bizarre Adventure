@@ -445,6 +445,9 @@ if game.PlaceId == 4643697430 then
     -- MAIN
     local SBRun = Window:NewTab("Steel Ball Run")
     local SBRunSection = SBRun:NewSection("Steel Ball Run")
+    SBRunSection:NewKeybind("Hide", "Change Keybind to Hide and Open", Enum.KeyCode.L, function()
+        Library:ToggleUI()
+    end)
 
     SBRunSection:NewButton("SBR Stage 4 TP", "Teleports to 4° Stage", function()
         local vu = game:GetService("VirtualUser")
@@ -504,7 +507,7 @@ if game.PlaceId == 4643697430 then
                     ----Tp Bypass
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1176, 362, -224)
                 end)
-                SBRunSection:NewButton("Click TP", "gives you a click teleport tool", function()
+                MainSection:NewButton("Click TP", "gives you a click teleport tool", function()
                     local vu = game:GetService("VirtualUser")
                     game:GetService("Players").LocalPlayer.Idled:connect(function()
                     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -532,4 +535,4 @@ if game.PlaceId == 4643697430 then
                 end)
                 tool.Parent = game.Players.LocalPlayer.Backpack
                 end)
-end
+end 
