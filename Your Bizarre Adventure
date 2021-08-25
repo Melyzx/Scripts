@@ -504,7 +504,7 @@ if game.PlaceId == 4643697430 then
                     ----Tp Bypass
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1176, 362, -224)
                 end)
-                MainSection:NewButton("Click TP", "gives you a click teleport tool", function()
+                SBRunSection:NewButton("Click TP", "gives you a click teleport tool", function()
                     local vu = game:GetService("VirtualUser")
                     game:GetService("Players").LocalPlayer.Idled:connect(function()
                     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
