@@ -535,4 +535,4 @@ if game.PlaceId == 4643697430 then
                 end)
                 tool.Parent = game.Players.LocalPlayer.Backpack
                 end)
-end
+end 
