@@ -14,8 +14,7 @@ if game.PlaceId == 2809202155 then
      local Misc = Window:NewTab("Misc")
      local MiscSection = Misc:NewSection("Misc")
      local Credits = Window:NewTab("Credits")
-     local CreditsSection = Credits:NewSection("Item Esp credits to French Spy")
-     local CreditsSection = Credits:NewSection("Item Farm By Xenon Hub")
+     local CreditsSection = Credits:NewSection("Item Farm credits to French Spy")
      MiscSection:NewKeybind("Hide", "Change Keybind to Hide and Open", Enum.KeyCode.L, function()
 	Library:ToggleUI()
 end)
@@ -536,4 +535,4 @@ if game.PlaceId == 4643697430 then
                 end)
                 tool.Parent = game.Players.LocalPlayer.Backpack
                 end)
-end 
+end
