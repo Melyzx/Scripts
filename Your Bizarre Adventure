@@ -152,6 +152,9 @@ end)
 MiscSection:NewButton("Infinite Yield", "Open Infinite Yield", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
 end)
+MiscSection:NewButton("Xenon Hub", "Open Xenon Hub", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/49qPsLQx'))() 
+end)
 MainSection:NewButton("Sell Holding Item", "sells the item that you are holding", function()
     local args = {
         [1] = "EndDialogue",
