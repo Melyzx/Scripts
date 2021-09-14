@@ -409,6 +409,95 @@ ItemsSection:NewButton("Item Esp", "item esp poggers!", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/hellyeah1/yba-item-esp/main/ybaitemesp.lua", true))()
         print("item esp activated.")
 end)
+MainSection:NewButton("Worthness V", "Gets worthiness V", function()
+    local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Vitality I",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Vitality II",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Vitality III",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness I",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness II",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness III",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness IV",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness V",
+        ["SkillTreeType"] = "Character"
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "LearnSkill",
+    [2] = {
+        ["Skill"] = "Worthiness V",
+        ["SkillTreeType"] = "Character"
+    }
+}
+end)
 MainSection:NewButton("Click TP", "gives you a click teleport tool", function()
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
