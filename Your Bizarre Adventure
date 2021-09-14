@@ -488,52 +488,33 @@ if game.PlaceId == 4643697430 then
                     wait(1)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1805, 414, 9007)
                 end)
-                SBRunSection:NewButton("SBR TP Stage 1", "Use if there is no zone", function()
-                    local vu = game:GetService("VirtualUser")
-                    game:GetService("Players").LocalPlayer.Idled:connect(function()
-                    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                    wait(1)
-                    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                    end)
-                    ----Anti Kick
-                    local TPBypass
-                    TPBypass = hookfunction(getrawmetatable(game).__namecall, newcclosure(function(self, ...)
-                    local args = {...}
-                    if self.Name == "Returner" and args[1] == "idklolbrah2de"  then
-                          return "  ___XP DE KEY"
-                      end
-                    return TPBypass(self, ...)
-                    end))
-                    ----Tp Bypass
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1176, 362, -224)
-                end)
                 SBRunSection:NewButton("Click TP", "gives you a click teleport tool", function()
-                    local vu = game:GetService("VirtualUser")
-                    game:GetService("Players").LocalPlayer.Idled:connect(function()
-                    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                    wait(1)
-                    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                    end)
-                    ----Anti Kick
-                    local TPBypass
-                    TPBypass = hookfunction(getrawmetatable(game).__namecall, newcclosure(function(self, ...)
-                    local args = {...}
-                    if self.Name == "Returner" and args[1] == "idklolbrah2de"  then
-                          return "  ___XP DE KEY"
-                      end
-                    return TPBypass(self, ...)
-                    end))
-                    ----Tp Bypass
-                    mouse = game.Players.LocalPlayer:GetMouse()
-                tool = Instance.new("Tool")
-                tool.RequiresHandle = false
-                tool.Name = "Click TP"
-                tool.Activated:connect(function()
-                local pos = mouse.Hit+Vector3.new(0,2.5,0)
-                pos = CFrame.new(pos.X,pos.Y,pos.Z)
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-                end)
-                tool.Parent = game.Players.LocalPlayer.Backpack
-                end)
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    ----Anti Kick
+    local TPBypass
+    TPBypass = hookfunction(getrawmetatable(game).__namecall, newcclosure(function(self, ...)
+    local args = {...}
+    if self.Name == "Returner" and args[1] == "idklolbrah2de"  then
+          return "  ___XP DE KEY"
+      end
+    return TPBypass(self, ...)
+    end))
+    ----Tp Bypass
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
 		
 end 
