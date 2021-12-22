@@ -15,7 +15,7 @@ if game.PlaceId == 2809202155 then
      local MiscSection = Misc:NewSection("Misc")
      local Credits = Window:NewTab("Credits")
      local CreditsSection = Credits:NewSection("Item Farm credits to French Spy")
-     MiscSection:NewKeybind("Hide", "Change Keybind to Hide and Open", Enum.KeyCode.L, function()
+     MiscSection:NewKeybind("Hide", "Change Keybind to Hide and Open", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
 ItemsSection:NewButton("Use Arrow", "gets worthiness and uses arrow", function()
